@@ -13,6 +13,13 @@ zammad = { git = "https://github.com/andriantp/zammad-rust" }
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 ```
 
+This follows the latest commit on `main`. To pin a specific release, add a
+tag:
+
+```toml
+zammad = { git = "https://github.com/andriantp/zammad-rust", tag = "v0.1.0" }
+```
+
 ## Usage
 
 ```rust
