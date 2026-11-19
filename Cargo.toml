@@ -1,0 +1,21 @@
+[package]
+name = "zammad"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Async client for the Zammad helpdesk REST API"
+license = "MIT"
+repository = "https://github.com/andriantp/zammad-rust"
+readme = "README.md"
+keywords = ["zammad", "helpdesk", "ticket", "api", "client"]
+categories = ["api-bindings", "web-programming::http-client"]
+
+[dependencies]
+reqwest = { version = "0.13.5", features = ["json", "query"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+thiserror = "2.0.21"
+
+[dev-dependencies]
+tokio = { version = "1.54.1", features = ["macros", "rt-multi-thread"] }
+wiremock = "0.6.5"
